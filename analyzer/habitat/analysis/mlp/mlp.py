@@ -13,6 +13,9 @@ from tqdm import tqdm
 from habitat.analysis.mlp.devices import get_device_features
 from habitat.analysis.mlp.dataset import HabitatDataset
 
+# Reserved for future extension: CNN models (align with MLP naming)
+from .cnn import LinearCNN, LSTMCNN, Conv2DCNN, BMMCNN
+
 
 class MLPBase(nn.Module):
     def __init__(self, layers, layer_size):
